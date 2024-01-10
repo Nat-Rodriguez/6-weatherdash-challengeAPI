@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="search-section" class="form w-100">
+      <aside>
+        <h2>Search for a City</h2>
+        <form id="search-form">
+          <div>
+            <label for="search-input">City Name:</label>
+            <input type="text" id="search-input" class="form-input w-100" type="text" placeholder="Enter a city">
+            <button type="submit">Search</button>
+          </div>
+        </form>
+        <div class="search-history"></div>
+      </aside>
+    </section>
+
+    <section class="weather-display">
+      <article>
+        <h2>Today's Weather</h2>
+        <div id="today-weather" role="region" aria-live="polite"></div>
+      </article>
+
+      <article>
+        <h2>Forecast</h2>
+        <div id="forecast-weather" class="forecast-container" role="region" aria-live="polite"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Include Day.js for date handling -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+     ></script>
+    <script src="script.js"></script>
+  </footer>
+</body>
+</html>

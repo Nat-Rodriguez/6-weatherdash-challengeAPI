@@ -1,0 +1,15 @@
+{
+  "name": "6-weatherdash-challengeapi",
+  "version": "1.0.0",
+  "description": "Build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  }
+}

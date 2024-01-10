@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Salsa&display=swap');
+
+:root {
+  --primary: rgb(120, 155, 188);
+  --secondary: rgb(20, 116, 168);
+  --tertiary: rgb(84, 150, 235);
+  --dark: rgb(12, 18, 90);
+  --light: rgba(238, 238, 247, 1);
+}
+
+body {
+  font-family: Salsa;
+  font-size: 80%;
+  background-color: var(--tertiary);
+}
+
+
+button {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 100%;
+  background-color: var(--dark);
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: white;
+  border: 0;
+  transition: background-color 0.1s;
+}
+
+.search-section {
+    background-color: var(--secondary);
+    float: left;
+}
+
+.weather-display {
+    background-color: var(--primary);
+    float: right;
+    width: 79%;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;  
+}
+
+.forecast-card {
+    flex: 0 0 auto; 
+    width: 17%; 
+    border: 1px solid #ccc;
+    padding: 10px; 
+}
+
